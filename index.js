@@ -23,6 +23,16 @@ async function getUserData(id) {
   
 }
 
+getUserData(7)
+  .then((...basicInfo) => console.log(...basicInfo));
+  .then((...personalData) => console.log(...personalData));
+  .catch((err) => {
+    console.error(err);
+})
+
+promise.all([db1, db2, db3 ])
+.then()
+
 const user = await getUserData(7);
 console.log(user);
 
